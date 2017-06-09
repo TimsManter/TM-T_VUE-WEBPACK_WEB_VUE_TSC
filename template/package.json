@@ -1,0 +1,43 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "author": "{{author}}",{{#license}}
+  "license": "{{licenseType}}",{{/license}}
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --env=dev --open"
+  },
+  "dependencies": {
+    {{#axios}}"axios": "^0.16.1",{{/axios}}
+    "babel-runtime": "^6.23.0"{{#marked}},
+    "marked": "^0.3.6"{{/marked}}{{#mdi}},
+    "mdi": "^1.9.33"{{/mdi}},
+    "vue": "^2.2.6"{{#material}},
+    "vue-material": "^0.7.1"{{/material}}{{#router}},
+    "vue-router": "^2.5.3"{{/router}}
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.17.0",
+    "svg-inline-loader": "^0.7.1",
+    "ts-loader": "^2.0.3",
+    "tsify": "^3.0.1",
+    "tslint": "^5.4.3",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.3.2",
+    "url-loader": "^0.5.8",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.3",
+    "vue-ts-decorate": "^1.1.0",
+    "vue-typescript-import-dts": "^3.1.0",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

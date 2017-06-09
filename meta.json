@@ -1,0 +1,63 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "message": "Codename:"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "message": "Description:",
+      "default": "New Vue project"
+    },
+    "author": {
+      "type": "string",
+      "message": "Author:",
+      "default": "TM"
+    },
+    "license": {
+      "type": "confirm",
+      "message": "Add license?",
+      "default": true
+    },
+    "licenseType": {
+      "when": "license",
+      "type": "list",
+      "message": "Choose a license:",
+      "choices": [
+        "GPLv3",
+        "MIT"
+      ],
+      "default": "GPLv3"
+    },
+    "router": {
+      "type": "confirm",
+      "message": "Use vue-router?",
+      "default": true
+    },
+    "material": {
+      "type": "confirm",
+      "message": "Use vue-material?",
+      "default": true
+    },
+    "axios": {
+      "type": "confirm",
+      "message": "Use axios?",
+      "default": true
+    },
+    "mdi": {
+      "type": "confirm",
+      "message": "Use material design icons?",
+      "default": true
+    },
+    "marked": {
+      "type": "confirm",
+      "message": "Use marked?",
+      "default": false
+    }
+  },
+  "filters": {
+    "LICENSE.md": "license"
+  },
+  "completeMessage": "Here we go!"
+}
