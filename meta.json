@@ -58,8 +58,8 @@
   },
   "filters": {
     "LICENSE.md": "license",
-    "MainPage.vue": "router",
-    "BasePage.vue": "router"
+    "src/vue/pages/**/*": "router"
   },
+  "skipInterpolation": "src/vue/components/Hello.vue",
   "completeMessage": "Here we go!"
 }

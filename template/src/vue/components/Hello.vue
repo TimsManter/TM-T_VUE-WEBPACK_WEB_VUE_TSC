@@ -3,11 +3,10 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";{{#material}}
-  import VueMaterial from "vue-material";{{/material}}
+  import Vue from "vue";
   import { Component, Watch, Prop } from "vue-ts-decorate";
 
-  Component()
+  @Component()
   export default class Hello extends Vue {
     @Prop()
     message: string;
