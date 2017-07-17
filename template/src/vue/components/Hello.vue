@@ -7,6 +7,7 @@
   import VueMaterial from "vue-material";{{/material}}
   import { Component, Watch, Prop } from "vue-ts-decorate";
 
+  Component()
   export default class Hello extends Vue {
     @Prop()
     message: string;
