@@ -57,7 +57,9 @@
     }
   },
   "filters": {
-    "LICENSE.md": "license"
+    "LICENSE.md": "license",
+    "MainPage.vue": "router",
+    "BasePage.vue": "router"
   },
   "completeMessage": "Here we go!"
 }

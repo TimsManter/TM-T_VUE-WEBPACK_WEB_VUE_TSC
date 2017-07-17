@@ -2,7 +2,8 @@
 import Vue from "vue";{{#router}}
 import VueRouter from "vue-router";{{/router}}{{#material}}
 import VueMaterial from "vue-material";{{/material}}{{#axios}}
-import Axios from "axios";{{/axios}}
+import Axios from "axios";{{/axios}}{{#router}}
+import MainPage from "./../vue/pages/MainPage.vue";{{/router}}
 import "./../scss/style.scss";
 
 // Components
