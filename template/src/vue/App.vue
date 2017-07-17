@@ -15,7 +15,7 @@
   import { Component, Watch, Prop } from "vue-ts-decorate";
   import Hello from "./components/Hello.vue";
 
-  @Component()
+  @Component({ components: { Hello } })
   export default class App extends Vue {
   
   }
